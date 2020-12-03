@@ -1,0 +1,38 @@
+#include <stdio.h>
+#include <stdlib.h>
+// caculator code using functions
+
+
+int sum (int a, int b);
+int sub (int a, int b);
+int mul (int a, int b);
+void welcome();
+
+int main()
+{
+    int x, y=5,z=7;
+    welcome();
+    x=sum(y,z);
+    x=sub(y,z);
+    x=mul(y,z);
+    printf ("the value of x is %d",x);
+    return 0;
+}
+
+void welcome()
+{
+    printf (" welcome to our new calculator using functions \n");
+}
+
+int sum (int a, int b)
+{
+    return (a+b);
+}
+int sub (int a, int b)
+{
+    return (a-b);
+}
+int mul (int a, int b)
+{
+    return (a*b);
+}
