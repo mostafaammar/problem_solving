@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+
+void welcome();
+void welcome_reg(int registration);
+
+int main()
+{
+
+    //welcome();
+    welcome_reg(20201010);
+
+    return 0;
+}
+void welcome()
+{
+    printf ("Welcome to AAST \nWe are glad that you are part of our family at AAST \n Please note that:\n 1- you should study to have good marks\n 2- Enjoy your time in AAST \n ");
+
+
+}
+void welcome_reg(int registration)
+{
+    printf ("Welcome %d to AAST \nWe are glad that you are part of our family at AAST \n Please note that:\n 1- you should study to have good marks\n 2- Enjoy your time in AAST \n ",registration);
+}
