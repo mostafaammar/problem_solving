@@ -1,0 +1,54 @@
+#include <stdio.h>
+#include <stdlib.h>
+
+int sum (int a,int b);
+int sub (int a,int b);
+int mul (int a,int b);
+int main()
+{
+    int num1, num2;
+    char op;
+    int answer;
+
+    printf ("plz enter the values of num1 and num2 : ");
+    scanf ("%d %d",&num1,&num2);
+    printf ("plz enter operation(+_*):  ");
+    scanf (" %c",&op);
+
+    switch(op)
+    {
+    case ('+'):
+        answer=sum(num1,num2);
+        printf ("the value of num1 + num2 is %d",answer);
+        break;
+    case ('-'):
+        answer=sub(num1,num2);
+        printf ("the value of num1 - num2 is %d",answer);
+        break;
+    case ('*'):
+        answer=mul(num1,num2);
+        printf ("the value of num1 * num2 is %d",answer);
+        break;
+    default:
+        printf ("unknown operation");
+
+    }
+
+
+    return 0;
+}
+
+
+
+int sum (int a,int b)
+{
+    return(a+b);
+}
+int sub (int a,int b)
+{
+    return(a-b);
+}
+int mul (int a,int b)
+{
+    return(a*b);
+}
